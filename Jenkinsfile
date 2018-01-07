@@ -51,3 +51,4 @@ node {
    echo 'Archiva el paquete el paquete generado en Jenkins'
    step([$class: 'ArtifactArchiver', artifacts: '**/target/*.jar, **/target/*.war', fingerprint: true])
 }
+ 
